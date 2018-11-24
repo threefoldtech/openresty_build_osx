@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LUA_INIT='local k,l,_=pcall(require,"luarocks.loader") _=k and l.add_context("moonrocks","1.1.0-1")' exec 'lua' $ORHOME/lua/_moonrocks.lua "$@"

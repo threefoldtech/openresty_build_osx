@@ -1,0 +1,2 @@
+moonc *.moon
+moonc -w .

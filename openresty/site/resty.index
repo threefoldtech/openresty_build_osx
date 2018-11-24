@@ -1,0 +1,38 @@
+# BEGIN netstring
+
+dist netstring-1.0.6
+  modules netstring-1.0.6
+
+module netstring-1.0.6
+  section 18 1697 netstring.lua
+  section 153 1231 synopsis
+  section 1231 1650 usage
+  section 1650 1697 license
+
+# END netstring
+# BEGIN lua-resty-exec
+
+dist lua-resty-exec-3.0.3
+  aliases resty.exec
+  modules lua-resty-exec-3.0.3
+
+module lua-resty-exec-3.0.3
+  aliases resty.exec
+  section 18 10552 lua-resty-exec
+  section 933 1472 changelog
+  section 1472 1975 installation
+  section 1975 5544 resty.exec usage
+  section 2239 2557 ez-mode
+  section 2557 2855 setup argv beforehand
+  section 2855 3094 setup stdin beforehand
+  section 3094 3568 call with explicit argv, stdin data, stdout/stderr callbacks
+  section 3568 4009 setup stdout/stderr callbacks
+  section 4009 4378 treat timeouts as non-errors
+  section 4378 4702 but i actually want a shell!
+  section 4702 5544 daemonizing processes
+  section 5544 8352 resty.exec.socket usage
+  section 7102 8352 client object methods:
+  section 8352 10506 some example nginx configs
+  section 10506 10552 license
+
+# END lua-resty-exec
