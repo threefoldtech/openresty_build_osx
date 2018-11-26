@@ -1,6 +1,6 @@
 
 
-on osx
+# on osx
 ```
 brew install luarocks
 luarocks --lua-dir=/usr/local/opt/lua@5.1 install luaossl OPENSSL_DIR=/usr/local/opt/openssl CRYPTO_DIR=/usr/local/opt/openssl
@@ -19,4 +19,13 @@ export LUA_PATH="?;?.lua;$PWD/lua/lib/?/init.lua;$PWD/lua/lib/?.lua;$PWD/lua/lib
 export LUA_CPATH="$PWD/lua/?.so;./?.so"
 
 
+```
+
+
+# on ubuntu
+
+```
+apt install luarocks
+apt install openresty-openssl-dev
+luarocks install luaossl OPENSSL_DIR=/usr/local/openresty/openssl CRYPTO_DIR=/usr/local/openresty/openssl
 ```
