@@ -28,6 +28,7 @@ rm -f /usr/local/bin/restydoc
 rm -f /usr/local/bin/restydoc-index
 rm -f /usr/local/bin/sockproc
 rm -f /usr/local/bin/sockexec
+rm -f /usr/local/bin/redis*
 
 ln -s $DIRSB/openresty /usr/local/opt/openresty
 ln -s $DIRSB/openresty-openssl /usr/local/opt/openresty-openssl
