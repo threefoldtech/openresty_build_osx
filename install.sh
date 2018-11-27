@@ -1,8 +1,13 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    echo "INSTALL openresty on OSX"
+    echo "this script will install openresty on OSX"
 else
     echo "ONLY OSX SUPPORTED"
     exit 1
+fi
+
+set -x
+if [[ -z "${DIRSB}" ]]; then
+  export DIRSB=$PWD
 fi
 
 rm -f /usr/local/opt/openresty
@@ -24,9 +29,9 @@ rm -f /usr/local/bin/restydoc-index
 rm -f /usr/local/bin/sockproc
 rm -f /usr/local/bin/sockexec
 
-ln -s $PWD/openresty /usr/local/opt/openresty
-ln -s $PWD/openresty-openssl /usr/local/opt/openresty-openssl
-ln -s $PWD/cfg /usr/local/etc/openresty
+ln -s $DIRSB/openresty /usr/local/opt/openresty
+ln -s $DIRSB/openresty-openssl /usr/local/opt/openresty-openssl
+ln -s $DIRSB/cfg /usr/local/etc/openresty
 
-ln -s $PWD/openresty/bin/* /usr/local/bin
+
 
